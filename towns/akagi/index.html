@@ -1,1 +1,13 @@
-
+<h1>情報</h1>
+<p>Discord:<a href="https://discord.gg/fEqGQeF4TJ">DiscordLink</a></p>
+<p>ホームページ:<a href="https://earthmcakagi.github.io">赤城ホームページ</a></p>
+<p>ご連絡先:</p><p id="target-text">support@akagi.ddns.net。</p>
+<button onclick="copyText()">コピーする</button>
+<script>
+  function copyText() {
+    let text = document.getElementById("target-text").innerText;
+    navigator.clipboard.writeText(text).then(() => {
+      alert("コピーしました！");
+    });
+  }
+</script>
